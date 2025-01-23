@@ -1,7 +1,7 @@
 interface CoreConceptProps {
-  image: string;
-  title: string;
-  description: string;
+  readonly image: string;
+  readonly title: string;
+  readonly description: string;
 }
 
 export default function CoreConcept({ image, title, description }: CoreConceptProps) {
