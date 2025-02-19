@@ -1,9 +1,8 @@
-import { ReactNode } from "react";
+import { ReactNode ,HTMLAttributes} from "react";
 
-interface SectionProps {
+interface SectionProps extends HTMLAttributes<HTMLElement> {
   readonly children: ReactNode;
   readonly title: string;
-  readonly id: string;
 }
 
 export default function Section({ children, title, ...props }: SectionProps) {
