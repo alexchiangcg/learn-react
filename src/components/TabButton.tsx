@@ -7,7 +7,14 @@ HTMLButtonElement：
 HTMLButtonElement 是 指定 <button> 元素的具體型別，讓 TypeScript 知道 ButtonHTMLAttributes 是應該應用於 <button> 元素的。這樣，當你在 TabButton 組件中使用 onClick 等事件屬性時，TypeScript 能夠正確推斷事件物件的型別，並進行型別檢查。
 
 extends ButtonHTMLAttributes<HTMLButtonElement>：
-這表示 TabButtonProps 繼承了 <button> 元素的所有屬性，所以你可以在 TabButton 組件中使用所有 <button> 屬性 */
+這表示 TabButtonProps 繼承了 <button> 元素的所有屬性，所以你可以在 TabButton 組件中使用所有 <button> 屬性
+
+---------------------
+ButtonHTMLAttributes<T>	React 內建泛型 interface，用來定義 <input> 可用的屬性
+HTMLButtonElement	原生 DOM API 型別，代表 <input> HTML 元素
+
+
+*/
 
 
 // ButtonHTMLAttributes 是 React 提供的一個內建型別， 
